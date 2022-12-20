@@ -1,0 +1,49 @@
+nav {
+  z-index: 2000;
+  width: 100%;
+}
+
+
+iframe{
+  height: 96vh;
+}
+
+.info {
+  margin-top: 57px;
+}
+
+.info .img_container{
+  width: 350px;
+  height: 170px;
+}
+
+.info-btn {
+  z-index: 99;
+  position: absolute;
+  top: 50%;
+  left: -1.5%;
+
+}
+
+.info-btn2 {
+  z-index: 99;
+  position: absolute;
+  bottom: -1.5%;
+  left: 43%;
+  
+
+}
+
+.info-btn2 img{
+  transform: rotate(270deg);
+}
+
+.info .row {
+  max-height: 120px;
+  max-width: 500px;
+}
+
+.info .row button {
+  height: 37px;
+}
+
