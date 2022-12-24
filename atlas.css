@@ -4,6 +4,7 @@ body {
 }
 
 #map {
+ 
   position: absolute;
   top: 0;
   bottom: 0;
@@ -29,6 +30,10 @@ nav {
 
 .popover {
   z-index: 2001 !important;
+}
+
+main{
+  margin: 0 auto;
 }
 
 main .map_container {

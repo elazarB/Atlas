@@ -4,17 +4,11 @@ import {createMap} from "./mapAtlas.js";
 
 
 
-
-
-
-
 export const createInfo1 = (_ar) => {
 let imgFlag = _ar[0].flags.png;
 let name = _ar[0].name.common;
 let pop = _ar[0].population;
 let region = _ar[0].continents[0];
-
-
 
 
   document.querySelector("#id_flag").src = imgFlag;
