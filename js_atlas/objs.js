@@ -10,7 +10,6 @@ const obj = {
   ARG: "Argentina",
   ARM: "Armenia",
   ASM: "American Samoa",
-  ATA: "Antarctica",
   ATF: "French Southern and Antarctic Lands",
   ATG: "Antigua and Barbuda",
   AUS: "Australia",
@@ -254,7 +253,7 @@ export const objNamesByCodes = (_item) => {
   return obj[_item];
 }
 Object.keys(obj).forEach(key => {
-  let dataList = $("#commons")
+  let dataList = $("#commons");
   let option = document.createElement("option");
   option.value= obj[key];
   dataList.append(option);

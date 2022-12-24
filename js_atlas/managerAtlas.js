@@ -1,5 +1,5 @@
-import { createInfo1, createInfo2 , createMap } from "./atlasFile.js";
-
+import { createInfo1, createInfo2 } from "./atlasFile.js";
+import {createMap} from "./mapAtlas.js";
 
 
 
@@ -25,10 +25,4 @@ const createFile = (_ar) => {
   createInfo1(_ar);
   createInfo2(_ar);
   createMap(_ar[0].latlng[0], _ar[0].latlng[1]);
-
-
 }
-
-
-
-

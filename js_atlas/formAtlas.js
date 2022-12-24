@@ -8,31 +8,23 @@ export const declareEvents = () => {
   btnCountries.forEach(country => {
     country.addEventListener('click', () => {
       doApi(country.innerHTML)
-
     })
-
   })
-searchBtn.addEventListener('click', () => {
-  // console.log(translate(searchInp.value));
-      translate(searchInp.value)
-      searchInp.value = "";
-    })
 
+  searchBtn.addEventListener('click', () => {
+    translate(searchInp.value)
+    searchInp.value = "";
+  })
 }
 
-
-
- const translate = (sourceText) => {
+const translate = async (sourceText) => {
   let sourceLang = 'he';
   let targetLang = 'en';
-  // console.log(sourceText);
 
-  let url = "https://translate.googleapis.com/translate_a/single?client=gtx&sl=" + sourceLang + "&tl=" + targetLang + "&dt=t&q=" + encodeURI(sourceText);
+  let url = await "https://translate.googleapis.com/translate_a/single?client=gtx&sl=" + sourceLang + "&tl=" + targetLang + "&dt=t&q=" + encodeURI(sourceText);
   console.log(url);
 
   $.getJSON(url, (data) => {
-    // console.log(data[0][0][0])
     doApi(data[0][0][0]);
   });
-
 }

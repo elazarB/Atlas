@@ -1,18 +1,47 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+#map {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+}
+
+#menu {
+  position: absolute;
+  background: #efefef;
+  padding: 10px;
+  right: 45px;
+  font-family: 'Open Sans', sans-serif;
+}
+
 nav {
   z-index: 2000;
   width: 100%;
 }
 
+.modal {
+  z-index: 3002 !important;
+}
 
-iframe{
-  height: 96vh;
+.popover {
+  z-index: 2001 !important;
+}
+
+main .map_container {
+  width: 100%;
+  height: 100vh;
 }
 
 .info {
   margin-top: 57px;
+  height: 60vh !important;
 }
 
-.info .img_container{
+.info .img_container {
   width: 350px;
   height: 170px;
 }
@@ -27,14 +56,14 @@ iframe{
 
 .info-btn2 {
   z-index: 99;
-  position: absolute;
+  position: fixed;
   bottom: -1.5%;
   left: 43%;
-  
+
 
 }
 
-.info-btn2 img{
+.info-btn2 img {
   transform: rotate(270deg);
 }
 
@@ -46,4 +75,3 @@ iframe{
 .info .row button {
   height: 37px;
 }
-
