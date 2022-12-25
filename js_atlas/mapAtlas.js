@@ -1,17 +1,12 @@
-export const createMap = (_longitude, _Latitude) => {
-  // document.querySelector("#id_map").src = `https://maps.google.com/maps?q=${_longitude},${_Latitude}&z=6&ie=UTF8&iwloc=&output=embed`;
+export const createMap = async(_longitude, _Latitude) => {
   mapboxgl.accessToken = 'pk.eyJ1IjoiZWxpMzEyNTE1IiwiYSI6ImNsYnhmM240YjJidm0zdnFuenMyMHlocGgifQ.XHj_NRhHp8K5u_RrAZDbsw';
-  const map = new mapboxgl.Map({
+  const map = await new mapboxgl.Map({
     container: 'map',
     style: 'mapbox://styles/mapbox/streets-v12',
     center: [_Latitude, _longitude],
     zoom: 5
     
   });
-
-
-
-
 
   const layerList = document.querySelector('#menu');
   const inputs = layerList.getElementsByTagName('input');
